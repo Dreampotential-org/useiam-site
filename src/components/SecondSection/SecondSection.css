@@ -1,0 +1,73 @@
+.recover {
+    background: #717D45;
+    width: 100%;
+    display: table;
+    height: 100%;
+    position: relative;
+}
+.recover:before {
+    position: absolute;
+    content: "";
+    width: 50%;
+    height: 100%;
+    left: 0;
+    clip-path: polygon(100% 0, 100% 0%, 64% 100%, 0 100%, 0 0);
+    background-color: #15301B;
+}
+.recovor-info h2{
+    color: #fff;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 57px;
+    text-align: right;
+    letter-spacing: 0.02em;
+    display: block;
+    width: 100%;
+}
+.images-icon {
+    display: flex;
+    justify-content: right;
+}
+.images-icon a img {
+    max-width: 209px;
+    width: 100%;
+}
+.img-item {
+    margin-top: -120px;
+    margin-right: 30px;
+    max-width: 880px;
+    width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .recovor-info h2{
+        font-size: 32px;
+         line-height: 44px;
+    } 
+}
+
+
+
+@media only screen and (max-width:767px) {
+    .img-item {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    .sub-text{
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+.img-div h2 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    /* font-weight: 700; */
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+}
