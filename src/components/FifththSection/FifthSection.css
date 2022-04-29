@@ -1,0 +1,35 @@
+.background{
+    background-color: #15301B;
+}
+
+
+.heading{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+.effective-img .img-Plant {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -131px;
+    bottom: 0;
+    max-width: 320px;
+    margin: 0 auto;
+    width: 100%;
+}
+.effective-img img.iam-img {
+    z-index: 1;
+}
+@media only screen and (max-width:767px) {
+    .heading{
+        font-size: 27px;
+        line-height: 31px;
+    }
+}
+
+
