@@ -1,44 +1,138 @@
-.eight{
-    height: 100%;
+.eight {
+  height: 100%;
 }
 
-.text{
-    /* background-color: #15301B; */
-    background-color:#6a5252;
+.text {
+  /* background-color: #15301B; */
+  /* background-color:#6a5252; */
+  background: #15301b;
+  height: 100%;
 }
 
-.quote1{
-    position: absolute;
-    left: 20%;
+.quote1 {
+  position: absolute;
+  left: 6.61%;
+  right: 90.26%;
 }
 
-.quote2{
-    position: absolute;
-    left: 40%;
-    margin-top: -50px;
+.quote2 {
+  position: absolute;
+  left: 40%;
+  margin-top: -50px;
 }
 
-h2{
-    color: #fff;
-    font-family: 'Helvetica';
+h2 {
+  color: #fff;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+h3 {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.iam-img {
+  width: 100%;
+}
+.Ellipse-section {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  padding-right: 20px;
+  justify-content: center;
+}
+.ellips1 {
+  padding-right: 14px;
+  padding-left: 8px;
+}
+@media  (min-width:768px) and  (max-width:800px){
+   .text{
+       width: 100%;
+       height: 100%;
+   } 
+   h2 {
+     color: #fff;
+     font-family: "Helvetica";
+     font-style: normal;
+     font-weight: 400;
+     font-size: 24px;
+     line-height: 25px;
+     text-align: center;
+     letter-spacing: 0.02em;
+   }
+   h3 {
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
-    font-size: 27px;
-    line-height: 40px;
+    font-size: 15px;
+    line-height: 24px;
     text-align: center;
     letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  .quote1{
+      height: 20px;
+  }
+  .quote2{
+    height: 20px;
 }
-h3{
-    font-family: 'Helvetica';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 34px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: #FFFFFF;
-}
-
-.iam-img{
+.iam-img {
     width: 100%;
+    height: 500px;
+  }
+  .ellips1 {
+      margin-bottom: 10px;
+    padding-right: 14px;
+    padding-left: 8px;
+    height: 18px;
+  }
+
 }
+
+@media  (min-width:1024px) and  (max-width:1124px){
+    .text{
+        width: 100%;
+        height: 100%;
+    } 
+    h2 {
+        color: #fff;
+        font-family: "Helvetica";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.02em;
+      }
+      h3 {
+       font-family: "Helvetica";
+       font-style: normal;
+       font-weight: 400;
+       font-size: 16px;
+       line-height: 24px;
+       text-align: center;
+       letter-spacing: 0.02em;
+       color: #ffffff;
+     }
+     .quote1{
+        height: 20px;
+    }
+    .quote2{
+      height: 20px;
+  }
+  .iam-img {
+    width: 100%;
+    height: 500px;
+  }
+ }

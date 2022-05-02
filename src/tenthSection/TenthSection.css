@@ -1,0 +1,50 @@
+.footer {
+ 
+
+  color: white;
+  background: #15301B;;
+  height: 400px;
+  padding-top: 0%;
+  
+}
+.contact{
+    padding-top: 20PX;
+    text-align: left;
+    font-size: 50px;
+    margin-left: 40px;
+    width: 315px;
+height: 75px;
+left: 198px;
+top: 8001px;
+
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 46px;
+letter-spacing: 0.02em;
+
+color: #FFFFFF;
+
+}
+.sublist{
+
+
+    padding-top: 20px;
+font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 35px;
+
+
+
+color: #FFFFFF;
+}
+.mail-png {
+    height: 20px;
+    justify-content: center;
+}
+.phone-png {
+    height: 30px;
+    justify-content: center;    
+}
