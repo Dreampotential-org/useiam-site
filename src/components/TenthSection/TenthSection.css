@@ -1,0 +1,469 @@
+.footer {
+  /* justify-content: space-around;
+  display: flex; */
+  color: white;
+  background: #15301b;
+  height: 100%;
+  padding-top: 0%;
+}
+.guide-div {
+  text-align: left;
+
+}
+.guides {
+padding-bottom: 150px;
+  justify-content: center;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  /* line-height: 46px; */
+  letter-spacing: 0.02em;
+  margin-right: 50px;
+  color: #ffffff;
+}
+.contact {
+  padding-top: 50px;
+  text-align: left;
+
+  margin-left: 127px;
+  width: 315px;
+  height: 75px;
+  left: 198px;
+  top: 8001px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+}
+
+.sublist {
+  display: flex;
+  padding-top: 20px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+
+  color: #ffffff;
+}
+.sublist1 {
+  display: flex;
+  padding-top: 20px;
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+
+  color: #ffffff;
+}
+.mail-png {
+  height: 20px;
+  margin-right: 17px;
+  margin-top: 15px;
+  justify-content: center;
+}
+.phone-png {
+  height: 30px;
+  margin-right: 17px;
+  margin-top: 8px;
+  justify-content: center;
+}
+.downloadapp {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+  letter-spacing: 0.02em;
+
+  color: #ffffff;
+  padding-top: 50px;
+  margin-bottom: 50px;
+  text-align: right;
+  margin-right: 80px;
+  padding-bottom: 150px;
+}
+.googleplay-png {
+  margin-top: 10px;
+  height: 87px;
+  margin-right: 149px;
+  padding-bottom: 10px;
+}
+.appStore-png {
+  height: 80px;
+  margin-right: 149px;
+
+
+}
+.arrow-png {
+  height: 30px;
+  margin-right: 17px;
+  margin-top: 8px;
+  justify-content: center;
+}
+.contact-us {
+}
+
+@media (min-width: 1024px) and (max-width: 1124px) {
+  .contact {
+    font-size: 25px;
+  }
+  .sublist {
+    font-size: 15px;
+    margin-bottom: -5px;
+  }
+  .sublist1 {
+    font-size: 15px;
+    margin-bottom: -5px;
+  }
+ 
+  .footer {
+   
+    display: flex;
+    width: auto;
+  }
+  .guide-div{
+    font-size: 22px;
+    margin-top: -8px;
+  }
+ 
+  .phone-png{
+    height: 24px;
+  }
+  .mail-png{
+      height: 20px;
+  }
+  .guides{
+    font-size: 30px;
+    margin-top: 32px;
+    margin-left: 53px;
+      
+  }.arrow-png{
+    margin-top: 3px;
+    height: 17px;
+
+  }.sublist-div{
+    font-size: 12px !important;
+    margin-top: 9px;
+  }
+  .downloadapp {
+
+    font-size: 20px;
+  }.googleplay-png{
+      height: 50px;
+  }
+  .appStore-png{
+      height: 40px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 840px) {
+    .contact {
+      font-size: 20px;
+      margin-left: 43px;
+    }
+    .sublist {
+      font-size: 16px;
+    } 
+    .sublist1 {
+      font-size: 16px;
+    }
+   
+   
+    .footer {
+     
+      display: flex;
+      width: auto;
+    }
+   
+    .phone-png{
+      height: 24px;
+    }
+    .mail-png{
+        height: 20px;
+    }
+    .guides{
+      font-size: 20px;
+      padding-top: 59px;
+
+        
+    }
+    .guide-div{
+      font-size: 20px;
+    margin-left: 80px;
+    }.arrow-png{
+        height: 12px;
+
+    }.sublist-div{
+      font-size: 16px !important;
+      margin-top: 19px;
+    }
+    .downloadapp {
+  margin-right: 10px;
+      font-size: 18px;
+      margin-bottom: 74px;
+    }.googleplay-png{
+        height: 50px;
+    }
+    .appStore-png{
+        height: 40px;
+    }
+  }
+  
+@media (min-width: 425px) and (max-width: 525px) {
+  .contact {
+    font-size: 25px;
+margin-left: 120px;
+  }.contact-us {
+margin-left: 120px;
+  }
+  .phone-png{
+    height: 12px;
+    margin-right: 9px;
+    margin-top: 17px;
+
+}
+.mail-png{
+    height: 12px;
+    margin-right: 9px;
+    margin-top: 17px;
+
+}
+  .sublist {
+      font-size: 16px;
+   
+   
+  }  .sublist1 {
+    font-size: 16px;
+    margin-top: -30px;
+ 
+}.guide-div{
+    font-size: 25px;
+    margin-top: 180px;
+    margin-left: 120px;
+  }.arrow-png{
+      height: 10px;
+
+  }.sublist-div{
+   
+    font-size: 16px !important;
+    margin-left: 110px;
+  }.downloadapp{
+  font-size: 15px;
+  margin-right: 60px;
+  margin-top: -160px !important;
+  }.googleplay-png{
+    height: 50px;
+  
+    margin-right: 113px;
+  }.appStore-png{
+    height: 40px;
+
+    margin-right: 113px;
+  }.download{
+    font-size: 25px;
+
+  }
+}
+@media (min-width: 375px) and (max-width: 400px) {
+    .contact {
+      font-size: 20px;
+      width: auto;
+      margin-left: 120px;
+    }.contact-us {
+        margin-left: 141px;
+    }
+    .sublist {
+        font-size: 14px;
+        margin-left: -17px;
+        margin-top: -13px;
+    }
+    .sublist1 {
+      font-size: 14px;
+      margin-left: -17px;
+     
+      margin-top: -40px;
+  }
+ 
+   
+    .footer {
+     
+      display: flex;
+      width: auto;
+    }
+   
+    .phone-png{
+        height: 12px;
+        margin-right: 9px;
+        margin-top: 17px;
+    
+    }
+    .mail-png{
+        height: 12px;
+        margin-right: 9px;
+        margin-top: 17px;
+    
+    }
+    .guides{
+      font-size: 20px;
+      padding-top: 60px;
+        
+    }.guide-div{
+      font-size: 20px;
+      margin-top: 80px;
+      margin-left: 120px;
+    }.arrow-png{
+        height: 12px;
+        margin-right: 5px;
+        margin-top: 10px;
+        margin-top: 3px;
+
+    }.sublist-div{
+      font-size: 14px !important;
+      margin-left: 105px;
+    }
+    .downloadapp {
+     
+      font-size: 15px;
+  
+      margin-right: 72px !important;
+      margin-top: -169px !important;
+
+    
+    }.googleplay-png{
+        height: 39px;
+        margin-right: 102px;
+    }
+    .appStore-png{
+        height: 29px;
+        margin-right: 102px;
+    }
+  }
+    
+@media (min-width: 320px) and (max-width: 360px) {
+
+
+
+  .contact {
+    font-size: 18px;
+
+    margin-left: 107px;
+    width: auto;
+  }.contact-us {
+      margin-left: 141px;
+  }
+  .sublist {
+      font-size: 16px;
+    margin-left: -26px;
+      margin-top: -13px;
+  }
+  .sublist1 {
+    font-size: 16px;
+    margin-left: -26px;
+   
+    margin-top: -40px;
+}
+
+ 
+  .footer {
+   
+    display: flex;
+    width: auto;
+  }
+ 
+  .phone-png{
+      height: 12px;
+      margin-right: 9px;
+      margin-top: 17px;
+  
+  }
+  .mail-png{
+      height: 12px;
+      margin-right: 9px;
+      margin-top: 17px;
+  
+  }
+  .guides{
+    font-size: 18px;
+    padding-top: 60px;
+    margin-left: -8px;
+      
+  }.guide-div{
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 120px;
+  }.arrow-png{
+      height: 12px;
+      margin-right: 5px;
+      margin-top: 10px;
+      margin-top: 5px; 
+
+  }.sublist-div{
+    font-size: 16px !important;
+    margin-left: 81px;
+  }
+  .downloadapp {
+    margin-right: 25px !important;
+      font-size: 18px;
+      margin-top: -177px !important;
+  
+  }.googleplay-png{
+      height: 45px;
+      margin-right: 97px;
+  }
+  .appStore-png{
+      height: 36px;
+      margin-right: 97px;
+  }
+} 
+
+
+.download {
+  margin-right: 80px;
+}
+.sublist-div{
+    display: flex;
+    padding-top: 20px;
+    font-family: "Helvetica";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+  
+    color: #ffffff;
+}
+.socail-icons{
+float: left;
+margin-right: 25px;
+
+}
+
+
+ 
+@media (min-width: 1440px) and (max-width: 1500px) {
+ 
+  .guides{
+    font-size: 40px;
+    margin-left: 91px;
+    
+      
+  }
+  .contact{
+    font-size: 40px;
+  }.arrow-png{
+      height: 16px;
+      margin-right: 5px;
+   
+      margin-top: 9px;
+
+  }.sublist-div{
+    font-size: 25px !important;
+  }
+}
+
+

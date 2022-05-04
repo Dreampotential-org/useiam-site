@@ -10,6 +10,7 @@ import SixthSection from './components/SIxthSection/SixthSection';
 import FourthSection from './components/FourthSection/FourthSection';
 import NineSection from './components/NineSection/NineSection';
 import Tenthsection from './tenthSection/TenthSection';
+import TenthSection from './components/TenthSection/TenthSection';
 import SeventhSection from './components/SeventhSection/SeventhSection';
 
 
@@ -27,7 +28,7 @@ function App() {
      <SeventhSection/>
      <EighthSection/>
      <NineSection/>
-     {/* <Tenthsection/> */}
+     <TenthSection/>
     </div>
   );
 }
