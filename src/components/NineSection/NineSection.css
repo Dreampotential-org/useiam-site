@@ -15,13 +15,13 @@
   right: 90.26%;
 }
 
-.quote2 {
+/* .quote2 {
   position: absolute;
   left: 40%;
   margin-top: -50px;
-}
+} */
 
-h2 {
+/* h2 {
   color: #fff;
   font-family: "Helvetica";
   font-style: normal;
@@ -30,7 +30,7 @@ h2 {
   line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
-}
+} */
 h3 {
   font-family: "Helvetica";
   font-style: normal;
@@ -46,12 +46,24 @@ h3 {
   width: 100%;
   height: 800px;
 }
+
+
+
 .Ellipse-section {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
   padding-right: 20px;
   justify-content: center;
+  margin-bottom: 20px;
+
+}
+
+@media only screen and (max-width:768px) {
+  .friends-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 .ellips1 {
   padding-right: 14px;
@@ -98,6 +110,7 @@ h3 {
     padding-left: 8px;
     height: 18px;
   }
+  
 }
 
 @media (min-width: 1024px) and (max-width: 1124px) {
@@ -212,12 +225,10 @@ input[type="submit"]:hover {
 
 .input-container {
   display: flex;
-  width: 90%;
   flex-direction: column;
   gap: 8px;
   justify-content: center;
-  margin: 10px;
-  margin-left: 80px;
+  margin: 45px;
 }
 .first-name {
   font-family: "Helvetica";
@@ -288,3 +299,59 @@ margin-top: 20px;
   background: #15301b;
   border-radius: 20px;
 }
+.input-size1{
+    height: 40px;
+    border: 3px solid #15301B
+}
+
+@media (min-width: 768px) and (max-width: 1124px) {
+   
+    .input-container{
+        /* width: 50%; */
+    }
+    .first-name{
+        font-size: 15px;
+
+    }
+    .email{
+        font-size: 15px;
+    }
+    .phonenumber{
+        font-size: 15px;
+    }
+    .website{
+        font-size: 15px;
+    }
+    
+    .submit{
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+   }
+   
+@media (min-width: 320px) and (max-width: 424px) {
+   
+    .input-container{
+        /* width: 50%; */
+    }
+    .first-name{
+        font-size: 15px;
+
+    }
+    .email{
+        font-size: 15px;
+    }
+    .phonenumber{
+        font-size: 15px;
+    }
+    .website{
+        font-size: 15px;
+    }
+    
+    .submit{
+        font-size: 20px;
+        width: 150px;
+        height: 50px;
+    }
+   }

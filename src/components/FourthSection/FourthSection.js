@@ -24,11 +24,11 @@ const FourthSection = () => {
                 <h2 className='four-title'>Here’s how it works!</h2>
                <div className='content position-relative'>
                    <img className='tick' src={Icon} alt="img"/>
-                   <h2 className='four-content'>Have your clients install useIAM app on their phone and select your organization at signup.</h2>
+                   <h2 className='four-content'>Have your clients install useIAM app on their phone and select your organization at sign up.</h2>
                </div>
                <div className='content position-relative'>
                    <img className='tick' src={Icon} alt="img"/>
-                   <h2 className='four-content'>Instruct them to submit a daily video talking about their plans for their day or taking doctor prescribe medicine.</h2>
+                   <h2 className='four-content'>Instruct clients to submit a daily video talking about their plans for their day or taking doctor prescribed medicine.</h2>
                </div>
                <div className='content position-relative'>
                    <img className='tick' src={Icon} alt="img"/>

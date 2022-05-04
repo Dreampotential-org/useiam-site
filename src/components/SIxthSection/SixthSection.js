@@ -14,8 +14,7 @@ const SixthSection = () => {
         <Container>
             <div>
                 <h2 className='six-title pb-5'>
-                    Specifically built for rehabilitation and drug treatment centers to provide a higher level of care and connection 
-                    with person you are serving.
+                Specifically built for rehabilitation and drug treatment centers to provide a higher level of care and connection with the people you are serving.
                 </h2>
             </div>
         <Row>
@@ -26,10 +25,11 @@ const SixthSection = () => {
                 {/* </div>    */}
             </Col>
             <Col md={5}>
-                <div className='pt-5'>
-                    <h2 className='six-title'>Join the large network of providers using useIAM.</h2>
-                    <div className='pt-5'>
-                       <a href='#' className='btn btn-lg btn-custom'>Book Now</a>
+                <div className='pt-5 box'>
+                <div className='pt-5 box-text'>
+                    <h2 className='six-sub-title'>Join the large network of providers using useIAM.</h2>
+                  
+                       <a href='#' className='btn btn-lg btn-custom'>Join Now</a>
                     </div>
                 </div>
             </Col>

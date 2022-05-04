@@ -25,6 +25,9 @@
     letter-spacing: 0.02em;
     display: block;
     width: 100%;
+    font-size: 45px;
+    line-height: 50px;
+  
 }
 .images-icon {
     display: flex;
@@ -42,12 +45,20 @@
 }
 @media screen and (max-width: 768px) {
     .recovor-info h2{
-        font-size: 32px;
-         line-height: 44px;
+        /* font-size: 32px;
+         line-height: 44px; */
+         font-size: 21px;
+         line-height: 35px;
+         right: 0;
+         position: initial;
+
     } 
 }
 
-
+.sub-text{
+    padding-top: 25%;
+    right: 0;
+}
 
 @media only screen and (max-width:768px) {
     .img-item {

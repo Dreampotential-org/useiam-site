@@ -15,11 +15,12 @@ const EighthSection = () => {
       <div className="container-fluid">
         <Row>
           <Col md={6} className="p-0">
-            <div className="text pt-5 pb-5  ">
-              <div>
+            <div className="text quote_root_div pt-5">
+              <div className="quote_div">
                 <img className="quote1" src={quote1} alt="Ellipse" />
-                <div className="bottom-text p-5">
-                  <h2>
+                <div className="bottom-text p-5 mt-5">
+                  <div>
+                  <h2 className="iam-text">
                     I've been using IAM for six months. Even though my legal
                     problems are over, I enjoy my new found sobriety and IAM
                     makes me feel accountable. I feel good about myself.
@@ -28,7 +29,7 @@ const EighthSection = () => {
                 <img className="quote2" src={quote2} alt="Ellipse" />
               </div>
 
-              <h3 className="alex">ALEX, IAM USER, NEW YORK, NY</h3>
+              <h3 className="alex pt-5">ALEX, IAM USER, NEW YORK, NY</h3>
 
               <div className="Ellipse-section  ">
                 <div >
@@ -41,13 +42,14 @@ const EighthSection = () => {
                   <img className="ellips1" src={Ellipse5} alt="Ellipse" />
                 </div>
               </div>
+              </div>
             </div>
           </Col>
           <Col md={6} className="p-0">
             <div className="position-relative">
               <div>
                 <img
-                  className="iam-img position-relative"
+                  className="iam-man position-relative"
                   src={Man}
                   alt="Man"
                 />

@@ -3,7 +3,7 @@
 }
 
 
-.heading{
+.heading1{
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
@@ -22,14 +22,57 @@
     margin: 0 auto;
     width: 100%;
 }
-.effective-img img.iam-img {
+.effective-img img.iam-man {
     z-index: 1;
 }
-@media only screen and (max-width:767px) {
-    .heading{
-        font-size: 27px;
-        line-height: 31px;
+@media only screen and (max-width:768px) {
+    .heading1{
+        /* font-size: 27px;
+        line-height: 31px; */
+        font-size: 20px;
+        line-height: 25px;
+        text-align: justify;
     }
+    .effective-img .img-Plant {
+        /* position: absolute;
+        left: 0;
+        right: 0;
+        top: -154px;
+        bottom: 0;
+        max-width: 320px;
+        margin: 0 auto;
+        width: 100%; */
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -82px;
+        bottom: 0;
+    }
+    .iam-img {
+        width: 100%;
+        /* height: 500px; */
+      }
 }
 
 
+
+@media only screen and (max-width:425px) {
+    .effective-img .img-Plant {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -141px;
+        bottom: 0;
+    }
+    
+}
+
+@media only screen and (max-width:375px) {
+    .effective-img .img-Plant {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -167px;
+        bottom: 0;
+    }
+}

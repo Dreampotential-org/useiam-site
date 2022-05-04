@@ -15,14 +15,15 @@ const FifthSection = () => {
         <Row>
             <Col md={8} >
               <div className='effective-info mt-5 pt-5 mb-5 pb-5'>
-                <h2 className='heading'>UseIAM is an effective tool to nurture self introspection and foster growth.
-                 The person will enjoy using useIAM and will be able to document their activities to recovery.</h2>
+                <h2 className='heading1'>UseIAM is an effective tool to nurture self introspection and foster growth.
+                Your clients will enjoy using useIAM and will be able to document their activities to recovery.</h2>
                  </div>
             </Col>
             <Col md={4} >               
                 <div className='effective-img position-relative mt-5 pt-3 mb-5 pb-5' >
-                  <img className="iam-img  position-relative " src={IAM} alt="IAM"/>
                   <img className="img-Plant img-fluid" src={Plant} alt="Plant"/>
+                  <img className="iam-img  position-relative " src={IAM} alt="IAM"/>
+                  {/* <img className="img-Plant img-fluid" src={Plant} alt="Plant"/> */}
                 </div>
                 
             </Col>

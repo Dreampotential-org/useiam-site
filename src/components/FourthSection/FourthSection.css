@@ -47,3 +47,17 @@
     top: 37.68%;
     
 }
+
+@media only screen and (max-width:768px) {
+    .four-heading{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .four-title{
+        font-size: 27px;
+    }
+    .four-content{
+        font-size: 20px;
+        line-height: 25px;
+    }
+}

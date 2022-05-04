@@ -8,28 +8,48 @@
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 700;
-    font-size: 49px;
-    line-height: 52px;
+    font-size: 44px;
+    line-height: 44px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #15301B;
+    padding-bottom: 30px;
 }
+
+.six-sub-title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 35px;
+    /* text-align: center; */
+    /* letter-spacing: 0.02em; */
+    color: #15301B;
+}
+
 .btn-custom {
     background: #15301B;
     color: #fff;
-    padding: 25px 60px;
-    font-size: 40px;
-    font-weight: 600;
+    /* padding: 25px 60px; */
+    /* font-size: 40px;
+    font-weight: 600; */
     text-transform: uppercase;
 }
 @media only screen and (max-width:768px) {
-    .six-title{
-        font-weight: 700;
-        font-size: 41px;
-        line-height: 45px;
-        color: #15301B;
-        /* text-align: justify; */
+    .six-title {
+        /* font-weight: 700; */
+        font-size: 22px;
+        line-height: 26px;
+        /* color: #15301B; */
+        text-align: center;
     }
+    .six-sub-title{
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 28px;
+        /* text-align: center; */
+        /* letter-spacing: 0.02em; */
+        color: #15301B;
+    }
+ 
 }
 
 
@@ -57,5 +77,27 @@ h1{
     text-align: center;
     letter-spacing: 0.05em;
     }
+
+
+.box{
+    height: 565px;
+    position: relative;
+}
+
+@media only screen and (max-width:768px) {
+    .box{
+        height: 210px;
+        position: relative;
+    }
+}
+
+.box-text{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 
