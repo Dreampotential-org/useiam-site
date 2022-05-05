@@ -31,7 +31,7 @@ const EighthSection = () => {
                     autoPlay={true}
                     interval={6100}
                   >
-                  <div>
+                  <div className="slide-text-div">
                     <div className="myCarousel">
                       <h3 className="testiomonials"> I've been using IAM for six months. Even though my legal
                     problems are over, I enjoy my new found sobriety and IAM
