@@ -6,53 +6,23 @@ import Rectanglefriendsimg from "../../Assets/Rectanglefriendsimg.png";
 import { leadCreateApi } from "../../services/helper";
 import "./NineSection.css";
 import { Alert } from "bootstrap";
-
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 export const NineSection = () => {
   const [valuesregi, setValuesregi] = useState({
-    phone: "",
     name: "",
-    website: "",
     email: "",
+    phone: "",
+    website: "",
   });
 
   const [errorCreate, setErrorCreate] = useState({});
 
-  function validateregi(value) {
-    console.log("valuesregi :- "+JSON.stringify(valuesregi))
-    let errorCreate = {};
-    if (!valuesregi.name) {
-      errorCreate.name = "Name is required";
-    } else if (!/^[a-zA-Z]/.test(valuesregi.name)) {
-      errorCreate.name = "Name is invalid";
-    }
-    if (!valuesregi.email) {
-      errorCreate.email = "Email address is required";
-    } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
-      errorCreate.email = "Email address is invalid";
-    }
-    const payload = {
-      phone: valuesregi.phone,
-      name: valuesregi.name,
-      website: valuesregi.website,
-      email: valuesregi.email,
-    };
-
-    leadCreateApi(payload)
-        .then((res) => {
-          if (res?.status == 200) {
-            console.log("sfdsfgfsdfdf"+JSON.stringify(res))
-          } else {
-          }
-        })
-        .catch((err) => {
-          //toast(err);
-        });
-  }  
 
     const onChangeregi = (event) => {
       event.persist();
-      //setErrorCreate(validateregi(valuesregi));
+      setErrorCreate(validateregi(valuesregi));
       setValuesregi((valuesregi) => ({
         ...valuesregi,
         [event.target.name]: event.target.value,
@@ -62,8 +32,56 @@ export const NineSection = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     setErrorCreate(validateregi(valuesregi));
-    // alert("Clicked")
-  }
+    //console.log('valuesregi'+JSON.stringify(valuesregi))
+    // toast.success("Created successfully !");
+  
+      let errorCreate = {};
+      if (!valuesregi.name) {
+                errorCreate.name = "Name is required";
+                console.log('valuesregi dsdads'+JSON.stringify(errorCreate.name))
+      } else if (!/^[a-zA-Z]/.test(valuesregi.name)) {
+        errorCreate.name = "Name is invalid";
+      }
+      if (!valuesregi.email) {
+        errorCreate.email = "Email address is required";
+      } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
+        errorCreate.email = "Email address is invalid";
+      }
+      if (!valuesregi.phone) {
+        errorCreate.phone = "phone number is required";
+      } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
+        errorCreate.phone = "phone number is invalid";
+      }
+     
+      else{
+      const payload = {
+        name: valuesregi.name,
+        email: valuesregi.email,
+        phone: valuesregi.phone,
+        website: valuesregi.website,
+      };
+  
+      leadCreateApi(payload)
+          .then((res) => {
+            // console.log("response==>"+JSON.stringify(res))
+            if (res?.status == 201) {
+              toast.success("information submitted successfully !");
+              setValuesregi({
+                name: "",
+                email: "",
+                phone: "",
+                website: "",
+              });
+            } else {
+              toast.error("all fields is required");
+            }
+          })
+          .catch((err) => {
+            toast.error("email is required !"+err);
+          });
+      }  
+    }
+  
 
   return (
     <div className="">
@@ -88,39 +106,64 @@ export const NineSection = () => {
                 <div className="form">
                   <form>
                     <div className="input-container">
-                      <label className="first-name">FULL NAME </label>
+                      <label className="label">FULL NAME </label>
                       <input
                        onChange={onChangeregi}
                        value={valuesregi.name}
                       style={{height:'40px'}}type="text" name="name" required />
                     
+                    {errorCreate.name && (
+                    <p className="err-msg">
+                      {errorCreate.name}
+                    </p>
+                    )}
+
                     </div>
                     <div className="input-container">
-                      <label className="email">EMAIL </label>
+                      <label className="label">EMAIL </label>
                       <input 
                         onChange={onChangeregi}
                          value={valuesregi.email}
                       style={{height:'40px'}} type="text" name="email" required />
+
+                    {errorCreate.email && (
+                    <p className="err-msg">
+                      {errorCreate.email}
+                    </p>
+                    )}
                     
                     </div>
                     <div className="input-container">
-                      <label className="phonenumber">PHONE NUMBER </label>
+                      <label className="label">PHONE NUMBER </label>
                       <input 
                        onChange={onChangeregi}
                        value={valuesregi.phone}
                       style={{height:'40px'}} type="number" name="phone" required />
+
+                    {errorCreate.phone && (
+                    <p className="err-msg">
+                      {errorCreate.phone}
+                    </p>
+                    )}
                     
                     </div>
                     <div className="input-container">
-                      <label className="website">WEBSITE</label>
+                      <label className="label">WEBSITE</label>
                       <input 
                        onChange={onChangeregi}
                        value={valuesregi.website}
                       style={{height:'40px'}}type="text" name="website" required />
+
+                    {errorCreate.website && (
+                    <p className="">
+                      {errorCreate.website}
+                    </p>
+                    )}
                     
                     </div>
-                    <div className="button-container">
+                    <div className="button-container pb-5">
                       <button className="submit"type="submit" onClick={handleSubmit}> SUBMIT</button>
+                      <ToastContainer />
                     </div>
                   </form>
                 </div>
@@ -133,5 +176,21 @@ export const NineSection = () => {
     </div>
   );
 };
+
+function validateregi(valuesregi) {
+  console.log("valuesregi :- "+JSON.stringify(valuesregi))
+  let errorCreate = {};
+  if (!valuesregi.name) {
+    errorCreate.name = "Name is required";
+  } else if (!/^[a-zA-Z]/.test(valuesregi.name)) {
+    errorCreate.name = "Name is invalid";
+  }
+  if (!valuesregi.email) {
+    errorCreate.email = "Email address is required";
+  } else if (!/\S+@\S+\.\S+/.test(valuesregi.email)) {
+    errorCreate.email = "Email address is invalid";
+    }
+    return errorCreate;
+  }
 
 export default NineSection;

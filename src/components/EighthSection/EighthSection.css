@@ -19,9 +19,8 @@
   /* position: absolute;
   left: 40%;
   margin-top: -50px; */
-  position: absolute;
-    left: 40%;
-    margin-top: 30px;
+    position: absolute;
+    left: 40%; 
     right: 0;
 }
 
@@ -32,12 +31,24 @@
   align-items: center;
 }
 
+@media only screen and (max-width:425px) {
+  .quote_div{
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width:768px) {
+  .testiomonials{
+    font-size: 14px;
+  }
+  .quote1{
+    width: 7%;
+    margin-top: 13%;
+  }
   .quote2 {
-      position: absolute;
-      /* left: 40%; */
-      margin-top: 30px;
-      right: 0;
+    width: 7%;
+    margin-left: 38%;
+    right: 0;    
   }
   h2.iam-text {
     font-size: 19px;
@@ -49,6 +60,12 @@
 h2.iam-text {
   font-size: 20px !important;
     line-height: 20px !important;
+  }
+  .heading{
+    position: relative;
+    margin-top: 20px;
+    color: #15301b;
+    font-size: 30px;
   }
 }
 
@@ -89,6 +106,10 @@ h3 {
   padding-left: 8px;
 }
 @media  (min-width:768px) and  (max-width:800px){
+  .quote{
+    position: relative;
+    top: 30px;
+  }
    .text{
        width: 100%;
        height: 100%;
