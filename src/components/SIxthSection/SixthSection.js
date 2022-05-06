@@ -2,7 +2,7 @@ import React from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import people from '../../Assets/circle-of-people-in-rehab-holding-hands-2022-03-08-00-11-36-utc.jpg'
+import people from '../../Assets/circle-of-people-new.png'
 import JOIN from '../../Assets/JoinButton.png'
 import RectangleSix from '../../Assets/RectangleSix.png'
 
@@ -25,12 +25,13 @@ const SixthSection = () => {
                 {/* </div>    */}
             </Col>
             <Col md={5}>
-                <div className='pt-5 box'>
-                <div className='pt-5 box-text'>
-                    <h2 className='six-sub-title'>Join the large network of providers using useIAM.</h2>
-                  
+                <div className='box'>
+                <div className='box-text'>
+                    <div>
+                        <h2 className='six-sub-title'>Join the large network of providers using useIAM.</h2>
                        <a href='#' className='btn btn-lg btn-custom'>Join Now</a>
                     </div>
+                </div>
                 </div>
             </Col>
 

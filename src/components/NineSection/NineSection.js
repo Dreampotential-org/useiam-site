@@ -2,7 +2,7 @@ import React ,{useState} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Rectanglefriendsimg from "../../Assets/Rectanglefriendsimg.png";
+import Rectanglefriendsimg from "../../Assets/get_started_new.png";
 import { leadCreateApi } from "../../services/helper";
 import "./NineSection.css";
 import { Alert } from "bootstrap";
@@ -98,78 +98,76 @@ export const NineSection = () => {
               </div>
             </div>
           </Col>
-          <Col md={6} className="p-0">
-            <div className="position-relative">
-            <h1 className="heading"> Get Started</h1>
-              <div>
-              
-                <div className="form">
-                  <form>
-                    <div className="input-container">
-                      <label className="label">FULL NAME </label>
-                      <input
-                       onChange={onChangeregi}
-                       value={valuesregi.name}
-                      style={{height:'40px'}}type="text" name="name" required />
-                    
-                    {errorCreate.name && (
-                    <p className="err-msg">
-                      {errorCreate.name}
-                    </p>
-                    )}
+          <Col md={6} className="p-0 getstarted">
+            {/* <div className="position-relative"> */}
+            <h1 className="heading"> Get Started</h1>              
+                    {/* <div className="form"> */}
+                      <form className="form-getstarted">
+                        <div className="input-container">
+                          <label className="label">FULL NAME </label>
+                          <input
+                          onChange={onChangeregi}
+                          value={valuesregi.name}
+                          style={{height:'40px'}}type="text" name="name" required />
+                        
+                        {errorCreate.name && (
+                        <p className="err-msg">
+                          {errorCreate.name}
+                        </p>
+                        )}
 
-                    </div>
-                    <div className="input-container">
-                      <label className="label">EMAIL </label>
-                      <input 
-                        onChange={onChangeregi}
-                         value={valuesregi.email}
-                      style={{height:'40px'}} type="text" name="email" required />
+                        </div>
+                        <div className="input-container">
+                          <label className="label">EMAIL </label>
+                          <input 
+                            onChange={onChangeregi}
+                            value={valuesregi.email}
+                          style={{height:'40px'}} type="text" name="email" required />
 
-                    {errorCreate.email && (
-                    <p className="err-msg">
-                      {errorCreate.email}
-                    </p>
-                    )}
-                    
-                    </div>
-                    <div className="input-container">
-                      <label className="label">PHONE NUMBER </label>
-                      <input 
-                       onChange={onChangeregi}
-                       value={valuesregi.phone}
-                      style={{height:'40px'}} type="number" name="phone" required />
+                        {errorCreate.email && (
+                        <p className="err-msg">
+                          {errorCreate.email}
+                        </p>
+                        )}
+                        
+                        </div>
+                        <div className="input-container">
+                          <label className="label">PHONE NUMBER </label>
+                          <input 
+                          onChange={onChangeregi}
+                          value={valuesregi.phone}
+                          style={{height:'40px'}} type="number" name="phone" required />
 
-                    {errorCreate.phone && (
-                    <p className="err-msg">
-                      {errorCreate.phone}
-                    </p>
-                    )}
-                    
-                    </div>
-                    <div className="input-container">
-                      <label className="label">WEBSITE</label>
-                      <input 
-                       onChange={onChangeregi}
-                       value={valuesregi.website}
-                      style={{height:'40px'}}type="text" name="website" required />
+                        {errorCreate.phone && (
+                        <p className="err-msg">
+                          {errorCreate.phone}
+                        </p>
+                        )}
+                        
+                        </div>
+                        <div className="input-container">
+                          <label className="label">WEBSITE</label>
+                          <input 
+                          onChange={onChangeregi}
+                          value={valuesregi.website}
+                          style={{height:'40px'}}type="text" name="website" required />
 
-                    {errorCreate.website && (
-                    <p className="">
-                      {errorCreate.website}
-                    </p>
-                    )}
-                    
-                    </div>
-                    <div className="button-container pb-5">
-                      <button className="submit"type="submit" onClick={handleSubmit}> SUBMIT</button>
-                      <ToastContainer />
-                    </div>
-                  </form>
+                        {errorCreate.website && (
+                        <p className="">
+                          {errorCreate.website}
+                        </p>
+                        )}
+                        
+                        </div>
+                        <div className="button-container pb-5">
+                          <button className="submit"type="submit" onClick={handleSubmit}> SUBMIT</button>
+                          <ToastContainer />
+                        </div>
+                      </form>
+                    {/* </div>
                 </div>
-            </div>
-            </div>
-
+              </div> */}
+            {/* </div> */}
           </Col>
         </Row>
       </div>

@@ -12,6 +12,7 @@ import NineSection from './components/NineSection/NineSection';
 import Tenthsection from './tenthSection/TenthSection';
 import TenthSection from './components/TenthSection/TenthSection';
 import SeventhSection from './components/SeventhSection/SeventhSection';
+import Footer from './components/FooterSection/Footer';
 
 
 
@@ -28,7 +29,8 @@ function App() {
      <SeventhSection/>
      <EighthSection/>
      <NineSection/>
-     <TenthSection/>
+     {/* <TenthSection/> */}
+     <Footer/>
     </div>
   );
 }

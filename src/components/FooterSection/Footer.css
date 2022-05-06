@@ -1,0 +1,44 @@
+.footer-section{
+    background-color:  #15301B;
+}
+
+.main-title{
+    font-size: 30px;
+    color: #fff;
+    font-family: 'Helvetica';
+    font-style: normal;
+}
+
+.sub-title{
+    color: #fff;
+    font-size: 20px;
+}
+
+
+.icons{
+    position: absolute;
+    left: 6.61%;
+    right: 90.26%;
+    width: 8%;
+}
+
+/* .images-icon-button{
+    max-width: 209px;
+    width: 90%;  
+} */
+
+
+.img-button{
+    max-width: 145px;
+    width: 84%;
+}
+
+@media only screen and (max-width: 768px){
+    .icons {
+        width: 10%;
+    }
+    .sub-title{
+        color: #fff;
+        font-size: 15px;
+    }
+}

@@ -7,9 +7,9 @@
 .six-title{
     font-family: 'Helvetica';
     font-style: normal;
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 44px;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 40px;
     text-align: center;
     letter-spacing: 0.02em;
     color: #15301B;
@@ -33,17 +33,22 @@
     font-weight: 600; */
     text-transform: uppercase;
 }
+
+.btn-custom:hover {
+    color: #fff;
+}
+
 @media only screen and (max-width:768px) {
     .six-title {
         /* font-weight: 700; */
         font-size: 22px;
         line-height: 26px;
         /* color: #15301B; */
-        text-align: center;
+        text-align: justify;
     }
     .six-sub-title{
         font-weight: 700;
-        font-size: 14px;
+        font-size: 17px;
         line-height: 28px;
         /* text-align: center; */
         /* letter-spacing: 0.02em; */
@@ -60,9 +65,9 @@
 }
 
 .image2{
-    border: 10px solid #fff;
+    border: 7px solid #fff;
     width: 150px;
-    width: 100%;
+    width: 65%;
   }
   
 h1{
@@ -80,7 +85,7 @@ h1{
 
 
 .box{
-    height: 565px;
+    height: 360px;
     position: relative;
 }
 

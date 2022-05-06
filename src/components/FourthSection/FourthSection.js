@@ -17,7 +17,12 @@ const FourthSection = () => {
         </div>
     <Row>
         <Col md={6} className="">
-                <img className="image2" src={people} alt=""/>
+                {/* <img className="image2" src={people} alt=""/> */}
+                <iframe width="100%" height="100%" src="https://user-images.githubusercontent.com/59257416/163123166-ad0ea88c-a018-422a-8448-669dbd5b75dc.mp4" 
+                                            title="YouTube video player" 
+                                            frameborder="0" 
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
         </Col>
         <Col md={6}>
             <div>

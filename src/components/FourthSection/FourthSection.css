@@ -5,9 +5,9 @@
 .four-heading{
     font-family: 'Helvetica';
     font-style: normal;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 57px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 44px;
     letter-spacing: 0.02em;
     color: #FFFFFF;
 }
@@ -15,8 +15,8 @@
 .four-title{
     font-family: 'Helvetica';
     font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 30px;
     line-height: 46px;
     letter-spacing: 0.02em;
     text-decoration-line: underline;
@@ -32,8 +32,8 @@
     font-family: 'Helvetica';
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 44px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
     padding-left: 60px;
@@ -57,7 +57,7 @@
         font-size: 27px;
     }
     .four-content{
-        font-size: 20px;
-        line-height: 25px;
+        font-size: 15px;
+        line-height: 20px;
     }
 }
