@@ -44,7 +44,14 @@ const PricingTiersList2=[
  ]
 
  
-const SeventhSection = () => {
+const SeventhSection = ({onHandleclick}) => {
+
+
+  const scrollToBottom = () => {
+    onHandleclick();
+  }
+
+
   return (
     <>
       <div className="pricing">
@@ -65,7 +72,9 @@ const SeventhSection = () => {
                     );
                   })}
                   <div className="btn">
-                    <button className="btn btn-outline custom-btn">
+                    <button 
+                      onClick={scrollToBottom}
+                      className="btn btn-outline custom-btn">
                       GET STARTED
                     </button>
                   </div>
@@ -89,6 +98,7 @@ const SeventhSection = () => {
                   })}
                   <div className="btn">
                     <button
+                      onClick={scrollToBottom}
                       type="button"
                       className="btn btn-outline custom-btn-2"
                     >
@@ -117,6 +127,7 @@ const SeventhSection = () => {
                   
                   <div className="btn">
                     <button
+                      onClick={scrollToBottom}
                       type="button"
                       className="btn btn-outline custom-btn"
                     >

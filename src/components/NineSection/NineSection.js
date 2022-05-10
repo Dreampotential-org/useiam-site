@@ -1,4 +1,4 @@
-import React ,{useState} from "react";
+import React ,{useRef, useState ,useEffect} from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,7 +9,7 @@ import { Alert } from "bootstrap";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-export const NineSection = () => {
+export const NineSection = ({messages}) => {
   const [valuesregi, setValuesregi] = useState({
     name: "",
     email: "",
@@ -17,8 +17,13 @@ export const NineSection = () => {
     website: "",
   });
 
+  const messagesEndRef = useRef(messages)
+
   const [errorCreate, setErrorCreate] = useState({});
 
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" })
+  }
 
     const onChangeregi = (event) => {
       event.persist();
@@ -28,6 +33,12 @@ export const NineSection = () => {
         [event.target.name]: event.target.value,
       }));
     };
+
+    useEffect(() => {
+      if(messages!==''){
+      scrollToBottom()
+      }
+    }, [messages]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -84,7 +95,7 @@ export const NineSection = () => {
   
 
   return (
-    <div className="">
+    <div className="" ref={messagesEndRef}>
       <div className="container-fluid">
         <Row>
           <Col md={6} className="p-0">

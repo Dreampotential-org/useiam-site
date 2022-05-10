@@ -13,11 +13,18 @@ import Tenthsection from './tenthSection/TenthSection';
 import TenthSection from './components/TenthSection/TenthSection';
 import SeventhSection from './components/SeventhSection/SeventhSection';
 import Footer from './components/FooterSection/Footer';
-
-
-
+import { useState } from 'react';
+// import uuid from 'uuid/v1'
+import { v4 as uuidv4 } from 'uuid';
 
 function App() {
+
+  const[messages,setMessages]=useState('');
+
+  const addMessages=()=>{
+    setMessages(m => [...m, uuidv4()]);
+  }
+
   return (
     <div className="App">
      <FirstSection/>
@@ -26,10 +33,9 @@ function App() {
      <FourthSection/>
      <FifthSection/>
      <SixthSection/>
-     <SeventhSection/>
+     <SeventhSection onHandleclick={addMessages}/>
      <EighthSection/>
-     <NineSection/>
-     {/* <TenthSection/> */}
+     <NineSection messages={messages}/>
      <Footer/>
     </div>
   );
