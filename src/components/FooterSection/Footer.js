@@ -20,11 +20,11 @@ const Footer = () => {
                         <div className='pt-5'>
                             <h5 className='main-title'>Contact Us</h5>
                             <div className='position-relative'>
-                                <div className='pt-3'>
+                                <div className='pt-1'>
                                     <img className="icons" src={mail} alt="Ellipse" />
                                     <h5 className='sub-title'>team@useiam.com</h5>
                                 </div>
-                                <div className='pt-3'>
+                                <div className='pt-1'>
                                     <img className="icons" src={phone} alt="Ellipse" />
                                     <h5 className='sub-title'>1234567890</h5>
                                 </div>
@@ -35,11 +35,11 @@ const Footer = () => {
                         <div className='pt-5'>
                             <h5 className='main-title'>Guides</h5>
                             <div className='position-relative'>
-                                <div className='pt-3'>
+                                <div className='pt-1'>
                                     <img className="icons" src={Arrow} alt="Ellipse" />
                                     <h5 className='sub-title'>Tips on Being an IAM Monitor</h5>
                                 </div>
-                                <div className='pt-3'>
+                                <div className='pt-1'>
                                     <img className="icons" src={Arrow} alt="Ellipse" />
                                     <h5 className='sub-title'>How to be an IAM user!</h5>
                                 </div>

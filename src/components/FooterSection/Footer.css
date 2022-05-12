@@ -30,15 +30,19 @@
 
 .img-button{
     max-width: 145px;
-    width: 84%;
+    /* width: 84%; */
 }
 
 @media only screen and (max-width: 768px){
     .icons {
-        width: 10%;
+        width: 5%;
     }
     .sub-title{
         color: #fff;
         font-size: 15px;
+    }
+    .images-icon-button{
+        display: flex;
+        padding-left: 35px;
     }
 }

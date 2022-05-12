@@ -18,11 +18,21 @@ const FourthSection = () => {
     <Row>
         <Col md={6} className="">
                 {/* <img className="image2" src={people} alt=""/> */}
-                <iframe width="100%" height="100%" src="https://user-images.githubusercontent.com/59257416/163123166-ad0ea88c-a018-422a-8448-669dbd5b75dc.mp4" 
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/_debXPUnJkQ" 
                                             title="YouTube video player" 
-                                            frameborder="0" 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
                 </iframe>
+                {/* <iframe src='https://user-images.githubusercontent.com/59257416/163123166-ad0ea88c-a018-422a-8448-669dbd5b75dc.mp4'
+                        allow='autoplay; encrypted-media'
+                        allowfullscreen
+                        title='video'
+                        width="100%" height="100%"
+                /> */}
+
+            <video class="" controls="" autoplay="" name="media" id="video" width="100" height="100">
+                <source src="https://www.youtube.com/embed/_debXPUnJkQ"/>
+            </video>
+
         </Col>
         <Col md={6}>
             <div>

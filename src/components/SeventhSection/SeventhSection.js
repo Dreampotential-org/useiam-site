@@ -63,9 +63,9 @@ const SeventhSection = ({onHandleclick}) => {
                 <div className="card">
                   <img className="img-title" src={Curve} alt="img" />
                   <h3 className="title">FREE</h3>
-                  {PricingTiersList1.map((val) => {
+                  {PricingTiersList1.map((val,index) => {
                     return (
-                      <div className="icon-text">
+                      <div className="icon-text" key={index}>
                         <img className="img-wid" src={Icon} alt="" />
                         <p>{val.title}</p>
                       </div>
@@ -88,9 +88,9 @@ const SeventhSection = ({onHandleclick}) => {
                     <h3 className="title">$ 100/mo</h3>
                   </div>
                  
-                   {PricingTiersList2.map((val) => {
+                   {PricingTiersList2.map((val,index) => {
                     return (
-                      <div className="icon-text">
+                      <div className="icon-text" key={index}>
                         <img className="img-wid" src={Icon} alt="" />
                         <p>{val.title}</p>
                       </div>
@@ -115,9 +115,9 @@ const SeventhSection = ({onHandleclick}) => {
                     <h3 className="title">Contact Us</h3>
                   </div>
 
-                  {PricingTiersList3.map((val) => {
+                  {PricingTiersList3.map((val,index) => {
                     return (
-                      <div className="icon-text">
+                      <div className="icon-text" key={index}>
                         <img className="img-wid" src={Icon} alt="" />
                         <p>{val.title}</p>
                       </div>
