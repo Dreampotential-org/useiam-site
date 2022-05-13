@@ -26,7 +26,7 @@ const Footer = () => {
                                 </div>
                                 <div className='pt-1'>
                                     <img className="icons" src={phone} alt="Ellipse" />
-                                    <h5 className='sub-title'>1234567890</h5>
+                                    <h5 className='sub-title'>+1 (510) 380-7171</h5>
                                 </div>
                             </div>
                         </div>
