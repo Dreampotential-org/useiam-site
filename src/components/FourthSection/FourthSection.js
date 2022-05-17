@@ -29,9 +29,9 @@ const FourthSection = () => {
                         width="100%" height="100%"
                 /> */}
 
-            <video class="" controls="" autoplay="" name="media" id="video" width="100" height="100">
+            {/* <video class="" controls="" autoplay="" name="media" id="video" width="100" height="100">
                 <source src="https://www.youtube.com/embed/_debXPUnJkQ"/>
-            </video>
+            </video> */}
 
         </Col>
         <Col md={6}>

@@ -20,9 +20,11 @@ const FifthSection = () => {
                  </div>
             </Col>
             <Col md={4} >               
-                <div className='effective-img position-relative mt-5 pt-3 mb-5 pb-5' >
+                <div className='effective-img position-relative mt-5 pt-3 pb-5' >
                   <img className="img-Plant img-fluid" src={Plant} alt="Plant"/>
+                  <div className='pt-5'>
                   <img className="iam-img  position-relative " src={IAM} alt="IAM"/>
+                  </div>
                   {/* <img className="img-Plant img-fluid" src={Plant} alt="Plant"/> */}
                 </div>
                 

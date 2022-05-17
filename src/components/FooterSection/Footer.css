@@ -42,7 +42,6 @@
         font-size: 15px;
     }
     .images-icon-button{
-        display: flex;
-        padding-left: 35px;
+        /* display: flex; */
     }
 }
