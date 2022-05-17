@@ -25,7 +25,7 @@ const ThirdSection = () => {
                 
                 <div className='cam-gps position-relative'>
                   <img src={Camera} alt='camera' className='icon-img'/>
-                  <p className='position-relative sub-text-1'>Record plans and Feels</p>
+                  <p className='position-relative sub-text-1'>Record plans and Feelings</p>
                 </div>
                 
                 <div className='cam-gps position-relative'>
